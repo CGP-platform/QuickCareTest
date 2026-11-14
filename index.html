@@ -3,39 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kettle & Pine Walk-In | Help Shape Your Clinic</title>
-<meta name="description" content="A new walk-in clinic is coming. Five quick, anonymous questions to help us build it right.">
-<meta property="og:title" content="Help shape Kettle & Pine Walk-In">
-<meta property="og:description" content="Five quick, anonymous questions. About one minute.">
+<title>Sandhill Health | Help Shape Your Clinic</title>
+<meta name="description" content="We're exploring a new walk-in clinic that is convenient, efficient, and affordable. Share your thoughts in about a minute.">
+<meta property="og:title" content="Help shape Sandhill Health">
+<meta property="og:description" content="A few quick, anonymous questions. About one minute.">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f4f1ea; --card:#ffffff; --ink:#1d2b26; --muted:#5b6b64; --line:#e0dacd;
-    --pine:#24533f; --pine-soft:#e4efe8; --lake:#2f6f8f; --err:#9a3b1f;
+    --bg:#f5f1ea; --card:#ffffff; --ink:#22292b; --muted:#5f6a6c; --line:#e2dbcf;
+    --marsh:#3d5f63; --marsh-soft:#e5eeee; --dusk:#6f8a8c; --crown:#b8432f; --err:#9a3b1f;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif}
-  .hero{background:linear-gradient(160deg,var(--pine) 0%,#2c6a50 55%,var(--lake) 100%);color:#fff;padding:28px 16px 64px;position:relative;overflow:hidden}
-  .hero svg{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px}
+  .hero{background:linear-gradient(165deg,#2f4b4f 0%,var(--marsh) 50%,#8a9d94 100%);color:#fff;padding:28px 16px 70px;position:relative;overflow:hidden}
+  .hero .sun{position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#f3c98b 0%,rgba(243,201,139,0) 70%);opacity:.55}
+  .hero svg.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px}
   .inner{max-width:560px;margin:0 auto;position:relative}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em;font-size:15px;opacity:.95}
-  .brand .mark{width:30px;height:30px}
-  h1{font-family:Fraunces,Georgia,serif;font-size:30px;line-height:1.15;margin:18px 0 8px}
-  .hero p{margin:0;opacity:.9}
-  .wrap{max-width:560px;margin:-36px auto 0;padding:0 16px 48px;position:relative}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em;font-size:16px}
+  .brand .mark{width:32px;height:32px}
+  h1{font-family:Fraunces,Georgia,serif;font-size:30px;line-height:1.15;margin:18px 0 10px}
+  .hero p{margin:0;opacity:.92;font-size:15.5px}
+  .wrap{max-width:560px;margin:-38px auto 0;padding:0 16px 48px;position:relative}
   .q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
   .q h2{font-size:16px;font-weight:600;margin:0 0 4px}
   .hint{color:var(--muted);font-size:13px;margin:0 0 10px}
   .opt{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;margin-top:8px;cursor:pointer;user-select:none}
-  .opt input{accent-color:var(--pine);width:18px;height:18px;margin:0}
-  .opt.sel{border-color:var(--pine);background:var(--pine-soft)}
+  .opt input{accent-color:var(--marsh);width:18px;height:18px;margin:0}
+  .opt.sel{border-color:var(--marsh);background:var(--marsh-soft)}
   input.text,textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px;font:inherit}
-  input.text{max-width:160px;letter-spacing:.08em}
+  input.other{margin-top:8px}
   textarea{min-height:90px;resize:vertical}
   .hp{position:absolute;left:-9999px}
-  .btn{display:block;width:100%;padding:14px;border:0;border-radius:12px;background:var(--pine);color:#fff;font:600 16px Inter,sans-serif;cursor:pointer}
+  .btn{display:block;width:100%;padding:14px;border:0;border-radius:12px;background:var(--marsh);color:#fff;font:600 16px Inter,sans-serif;cursor:pointer}
   .btn:disabled{opacity:.45;cursor:default}
-  .btn.ghost{background:#fff;color:var(--pine);border:1px solid var(--pine);margin-top:10px}
+  .btn.ghost{background:#fff;color:var(--marsh);border:1px solid var(--marsh);margin-top:10px}
   .err{color:var(--err);font-size:14px;margin:8px 0 0;min-height:1em}
   .thanks{background:var(--card);border:1px solid var(--line);border-radius:14px;text-align:center;padding:30px 16px}
   .thanks h2{font-family:Fraunces,Georgia,serif;font-size:24px;margin:0 0 8px}
@@ -47,21 +48,26 @@
   .bar{margin-top:10px}
   .bar .lab{display:flex;justify-content:space-between;font-size:14px;gap:10px}
   .bar .track{height:10px;background:var(--bg);border-radius:6px;overflow:hidden;margin-top:4px}
-  .bar .fill{height:100%;background:var(--pine);border-radius:6px}
+  .bar .fill{height:100%;background:var(--marsh);border-radius:6px}
   footer{color:var(--muted);font-size:12px;text-align:center;margin-top:24px}
 </style>
 </head>
 <body>
 <section class="hero">
+  <div class="sun"></div>
   <div class="inner">
     <div class="brand">
-      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#fff" opacity=".15"/><path d="M16 5l-6 9h3.5l-5 7H14v5h4v-5h5.5l-5-7H22z" fill="#fff"/></svg>
-      Kettle &amp; Pine Walk-In
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="#fff" opacity=".14"/>
+        <circle cx="20.5" cy="8.5" r="1.8" fill="#d9573f"/>
+        <path d="M21 9.5c-1 2.5-1.5 4.5-1 6.5-2-.6-5-.4-7.5 1.2C10 18.8 8.5 21 8 23c2-1.3 4-1.8 6-1.6l-1.5 6M15.5 21.6l1 5.9M21 9.5l4.5 1" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Sandhill Health
     </div>
     <h1>Help shape a new walk-in clinic for our community</h1>
-    <p>Five quick questions. About one minute. Anonymous.</p>
+    <p>We're exploring opening a new walk-in clinic designed around you: convenient, efficient, and affordable. Our goal is to save individuals and families both money and the hassle that often comes with traditional healthcare options. Your honest answers will help us build it right, and it only takes a minute.</p>
   </div>
-  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C150 10 300 55 450 30 S750 5 900 30 S1100 50 1200 25 V60 H0Z" fill="#f4f1ea"/></svg>
+  <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C150 10 300 55 450 30 S750 5 900 30 S1100 50 1200 25 V60 H0Z" fill="#f5f1ea"/></svg>
 </section>
 
 <main class="wrap">
@@ -73,42 +79,39 @@
   <div id="results" hidden></div>
   <div class="share">
     <h3>Know someone with an opinion?</h3>
-    <p class="hint" style="margin:0">Copy this message and text it to a friend or family member.</p>
+    <p class="hint" style="margin:0">Share this with a friend or family member.</p>
     <div class="msg" id="shareMsg"></div>
-    <button class="btn ghost" id="copyBtn" type="button">Copy message</button>
+    <button class="btn ghost" id="copyBtn" type="button">Share</button>
   </div>
-  <footer>Kettle &amp; Pine Walk-In is a working name. &copy; 2026</footer>
+  <footer>Sandhill Health is a working name. &copy; 2026</footer>
 </main>
 
 <script>
 // 1) Paste your Apps Script Web App URL here (ends in /exec)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyakVdAGnZ-qetzS41qmkTEYsT8dDbojM4G_HmaG1uh6E08jzryIsCSuFvgBrt_wXfaog/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzxdakOxM9tyzAM7BEYXqEBOcFuJhMcwBZq-LNvut9q2h4qVyXuu7lq3NOgW87-VPn7/exec";
 
 const QUESTIONS = [
-  { id:"zip", type:"zip", title:"What's your ZIP code?", hint:"Optional. Helps us choose a convenient location." },
   { id:"current", type:"single", title:"Where do you usually go now for a minor illness or injury?",
     options:["Primary care office","Urgent care","Emergency department","Virtual or phone visit","I usually wait it out"] },
   { id:"priorities", type:"multi", max:2, title:"What matters most when choosing a walk-in clinic?", hint:"Pick up to 2.",
     options:["Short wait","Low cost","Close to home or work","Evening and weekend hours","Accepts my insurance","Same provider each time"] },
   { id:"time", type:"single", title:"When would you most likely visit?",
     options:["Weekday morning","Weekday lunch hour","Weekday evening","Weekend"] },
-  { id:"price", type:"single", title:"What feels like a fair self-pay price for a basic visit?",
-    options:["Under $75","$75 to $125","$126 to $175","Over $175"] },
+  { id:"price", type:"single", title:"The current cost of an urgent care visit in the Madison area is $200 on average (until you reach your deductible). What would you be willing to pay out of pocket for a basic visit?",
+    options:["Under $50","$50 to $99","$100 to $149","$150 to $199","$200 or more"] },
+  { id:"services", type:"multi", other:true, title:"Would you be interested in any of the following services?", hint:"Select all that apply.",
+    options:["Sports physical","GLP-1 / weight loss","Addiction medicine","Telehealth visits","Other"] },
   { id:"wish", type:"text", title:"What one thing would make you choose a new walk-in clinic?", hint:"Optional." }
 ];
 
 const answers = {};
 const form = document.getElementById("form");
-let n = 0;
+let n = 0, otherInput = null;
 
 QUESTIONS.forEach(q=>{
   const box = document.createElement("div"); box.className="q";
   box.innerHTML = `<h2>${++n}. ${q.title}</h2>${q.hint?`<p class="hint">${q.hint}</p>`:""}`;
-  if(q.type==="zip"){
-    const t=document.createElement("input"); t.className="text"; t.inputMode="numeric"; t.maxLength=5; t.placeholder="53xxx"; t.autocomplete="postal-code";
-    t.addEventListener("input",()=>{ t.value=t.value.replace(/\D/g,""); answers.zip=t.value; check(); });
-    box.appendChild(t);
-  } else if(q.type==="text"){
+  if(q.type==="text"){
     const t=document.createElement("textarea"); t.maxLength=400; t.placeholder="Type here";
     t.addEventListener("input",()=>{ answers[q.id]=t.value.trim(); });
     box.appendChild(t);
@@ -119,16 +122,25 @@ QUESTIONS.forEach(q=>{
       inp.type=q.type==="multi"?"checkbox":"radio"; inp.name=q.id; inp.value=opt;
       inp.addEventListener("change",()=>{
         if(q.type==="multi"){
-          const c=[...box.querySelectorAll("input:checked")];
-          if(c.length>q.max){ inp.checked=false; return; }
+          const c=[...box.querySelectorAll("input[type=checkbox]:checked")];
+          if(q.max && c.length>q.max){ inp.checked=false; return; }
           answers[q.id]=c.map(x=>x.value);
         } else answers[q.id]=opt;
         box.querySelectorAll(".opt").forEach(o=>o.classList.toggle("sel",o.querySelector("input").checked));
+        if(q.other && otherInput){
+          const on=(answers[q.id]||[]).includes("Other");
+          otherInput.hidden=!on; if(on) otherInput.focus(); else { otherInput.value=""; answers.serviceOther=""; }
+        }
         check();
       });
       lab.append(inp, document.createTextNode(opt));
       box.appendChild(lab);
     });
+    if(q.other){
+      otherInput=document.createElement("input"); otherInput.className="text other"; otherInput.placeholder="Please tell us what else"; otherInput.maxLength=150; otherInput.hidden=true;
+      otherInput.addEventListener("input",()=>{ answers.serviceOther=otherInput.value.trim(); });
+      box.appendChild(otherInput);
+    }
   }
   form.appendChild(box);
 });
@@ -139,9 +151,8 @@ const btn=document.createElement("button"); btn.className="btn"; btn.type="submi
 const err=document.createElement("p"); err.className="err";
 form.append(btn, err);
 
-function zipOk(){ return !answers.zip || /^\d{5}$/.test(answers.zip); }
-function complete(){ return answers.current && answers.priorities && answers.priorities.length && answers.time && answers.price && zipOk(); }
-function check(){ btn.disabled=!complete(); err.textContent = zipOk() ? "" : "ZIP code should be 5 digits."; }
+function complete(){ return answers.current && answers.priorities && answers.priorities.length && answers.time && answers.price; }
+function check(){ btn.disabled=!complete(); }
 
 form.addEventListener("submit", async e=>{
   e.preventDefault();
@@ -151,7 +162,7 @@ form.addEventListener("submit", async e=>{
   try{
     // text/plain avoids a CORS preflight; Apps Script still receives the JSON body
     await fetch(SCRIPT_URL, { method:"POST", mode:"no-cors", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(payload) });
-    try{ localStorage.setItem("kp_done","1"); }catch(_){}
+    try{ localStorage.setItem("sh_done","1"); }catch(_){}
     showResults();
   }catch(x){
     err.textContent="Sorry, that didn't go through. Please check your connection and try again.";
@@ -175,16 +186,16 @@ async function showResults(){
         const c=counts[o]||0, pct=r.total?Math.round(c/r.total*100):0;
         card.insertAdjacentHTML("beforeend",`<div class="bar"><div class="lab"><span>${o}</span><span>${pct}%</span></div><div class="track"><div class="fill" style="width:${pct}%"></div></div></div>`);
       });
-      if(q.type==="multi") card.insertAdjacentHTML("beforeend",`<p class="hint" style="margin-top:8px">People could pick 2, so totals exceed 100%.</p>`);
+      if(q.type==="multi") card.insertAdjacentHTML("beforeend",`<p class="hint" style="margin-top:8px">People could pick more than one, so totals can exceed 100%.</p>`);
       box.appendChild(card);
     });
   }catch(x){ box.innerHTML='<p class="stat">Results are not available right now. Thanks again for sharing your thoughts.</p>'; }
 }
-try{ if(localStorage.getItem("kp_done")==="1") showResults(); }catch(_){}
+try{ if(localStorage.getItem("sh_done")==="1") showResults(); }catch(_){}
 
 // share message uses this page's own address
 const link = location.origin + location.pathname;
-const shareText = `A new walk-in clinic is being planned near us and they want input. 5 quick anonymous questions: ${link}`;
+const shareText = `Sandhill Health is exploring a new walk-in clinic near us and wants community input. It takes about a minute: ${link}`;
 document.getElementById("shareMsg").textContent = shareText;
 document.getElementById("copyBtn").addEventListener("click", async ()=>{
   const b=document.getElementById("copyBtn");
@@ -192,7 +203,7 @@ document.getElementById("copyBtn").addEventListener("click", async ()=>{
     if(navigator.share){ await navigator.share({text:shareText}); return; }
     await navigator.clipboard.writeText(shareText); b.textContent="Copied. Paste into a text.";
   }catch(x){ b.textContent="Select the message above and copy it"; }
-  setTimeout(()=>b.textContent="Copy message",2500);
+  setTimeout(()=>b.textContent="Share",2500);
 });
 </script>
 </body>
